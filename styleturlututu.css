@@ -33,58 +33,199 @@ body {
 h1 {
     font-family: 'open-sansregular', 'Helvetica Neue', Arial, sans-serif;
     font-weight: normal;
+    font-size: 1.8em;
+    text-align: center;
 }
-
+h1:not(header) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section:nth-of-type(2) {
+    background-color: rgb(30,147,204);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#clients {
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 /*HEADER*/
 header {
     background-color: rgb(51, 51, 51);
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-    /*faire un flex ???*/
 nav {
     margin-left: 5%;
-    display: flex;
-    flex-direction: column;
 }
 nav ul {
     list-style-type: none;
     display: flex;
 }
 nav li {
-    margin-right: 15px;
+    display: inline-block;
 }
 nav a {
-    font-size: 0.9em;
     color: white;
     text-decoration: none;
+    margin: 15px 10px;
 }
 nav a:hover {
     color: rgb(224, 224, 224);
 }
-#barre-droite ul {
+/*small logo nav*/
+nav li:first-of-type {
+    background: url(images/minilogo.png) no-repeat right;
+}
+/*partie droite USER HEADER*/
+#barre-droite {
+    margin-right: 10%;
     display: flex;
 }
-#barre-droite a{
-    color: red;
-    /*????????*/
+#barre-droite a {
+    color: white;
+    margin: 15px 0;
+}
+#user {
+    margin-right: 5px;
 }
 /*FIN HEADER*/
 
 /*BANNIERE*/
-
 #banniere {
     background-color: rgb(30,147,204);
-    height: 400px;
-    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-image: url(images/avatar.png);
+    background-repeat: no-repeat;
+    background-position-x: 8%;
+    background-position-y: 30px;
 }
-.banniere img, .banniere article {
+#banniere article {
+    text-align: center;
+    margin: auto;
+}
+#banniere article div {
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+    position: relative;
+    margin-bottom: -50px;
+}
+#banniere article h1 {
+    color: white;
+    padding-bottom: 30px;
+}
+#banniere article a {
+    color: white;
+    font-size: 1.4em;
+    background-color: rgb(233, 144, 2);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/*logo et img*/
+#logo {
+    position: absolute;
+    left: 210px;
+    top: 0px;
+}
+/*AWESOME PROJECTS*/
+/*utiliser flex*/
+#awesome {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#awesome article {
+    width: 32%;
+    margin: 0 8%;
+    /*alignement titres*/
+}
+#awesome article p {
+    text-align: justify;
+}
+/*CLIENTS*/
+#clients p {
+    text-align: center;
+}
+#clients p:first-of-type img {
+    margin: 10px 25px;
+}
+#clients p:last-of-type {
+    margin-top: 50px;
+}
+/*STARTING*/
+/*ESSAIE n°2*/
+#starting {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 1.3em;
+}
+.button {
     display: inline-block;
 }
+#starting a {
+    width: 180px;
+    height: 50px;
+    margin: 0 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#starting div:not(:last-of-type) a {
+    background-color: rgb(22, 88, 130);
+    border-radius: 5px;
+}
+#starting div:last-of-type a {
+    background-color: rgb(233, 144, 2);
+    border-radius: 5px;
+}
+#starting a div {
+    color: white;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer {
+    background-color: rgb(51, 51, 51);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer ul {
+    list-style-type: none;
+    margin-left: 5%;
+    display: flex;
+}
+footer li {
+    display: inline-block;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 10px;
+}
+footer cite {
+    display: flex;
+    font-size: 0.8em;
+    color: white;
+    margin: 15px 50px;
+}
+/*RAJOUTER IMAGE MSG BACKGROUND*/
 
 /*links*/
 a {
     text-decoration: none;
 }
-footer a {
-    text-decoration: none;
-}
+
+
+/*toutes les sections en position relative
+puis block intérieur en absolue (rapport à section)*/
