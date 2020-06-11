@@ -29,18 +29,20 @@
             <article>
                 <div><h1>turlututu<img id="logo" alt="logo" src="images/logo.png"></h1></div>
                 <h1>The Plug and Play Database service</h1>
-                <a href="#" target="_blank">Start building NOW »</a>
+                <a href="#">Start building NOW »</a>
             </article>
         </section>
+
 <!--3.AWESOME PROJECTS-->
         <h1>For awesome project with deadlines</h1>
+
         <section id="awesome">
             <article>
                 <h2>> Simple to use</h2>
                 <p>
                     turlututu.io is probably the fastest solution to get a database 
                     going for web and serverless applications. Model your information quickly. 
-                    THe data manegement application, schema and REST API are instantly avilable.
+                    THe data management application, schema and REST API are instantly available.
                 </p>
             </article>
             <article>
@@ -66,8 +68,9 @@
                     on turlututu.com Pages with server-side data-binding.
                 </p>
             </article>
-            <aside><!-- ???open chat question??? <img src="#" alt="chat"> --></aside>
+            <aside><a href="#ancrebas"><img alt="msg" src="images/iconmsg.png"></a></aside>
         </section>
+
 <!--4.CLIENTS LOGOS-->
         <h1>Innovative teams get more done with turlututu.com</h1>
         <section id="clients">
@@ -81,26 +84,51 @@
                 <a href="#" target="_blank"><img src="images/fwd.png" alt="FWD" /></a>
             </p>
             <p>
-                <a href="#" target="_blank"></a><img src="images/product.png" alt="Product Hunt" /></a>
+                <a href="#" target="_blank"><img src="images/product.png" alt="Product Hunt" /></a>
             </p>
         </section>
 <!--5.GET STARTED-->
         <section id="starting">
-            <div class="button"><p><a href="#">REST API »</a></p></div>
-            <div class="button"><p><a href="#">Docs »</a></p></div>
-            <div class="button"><p><a href="#">Start Building »</a></p></div>
+            <div class="pagebutton"><p><a href="#">REST API »</a></p></div>
+            <div class="pagebutton"><p><a href="#">Docs »</a></p></div>
+            <div class="pagebutton"><p><a href="#">Start Building »</a></p></div>
         </section>
 <!--FOOT-->
-        <footer>
-            <ul>
+        <footer id="ancrebas">
+            <nav><ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <cite>© 2017 turlututu.com</cite>
-            <!--rajout chat msg en background-->
+            </ul></nav>
+            <cite>© 2017 turlututu.io</cite>
+            <aside><img alt="msg" src="images/iconmsg.png"></aside>
+                        <!--"CHAT-POPUP"
+                                                <button class="open-button" onclick="openForm()"><img alt="msg" src="images/iconmsg.png">
+                                                <div class="chat-popup" id="myForm">
+                                                    <form action="/action_page.php" class="form-container">
+                                                        <h1>Ask a question</h1>
+                                    
+                                                        <label for="msg"><b>Message</b></label>
+                                                        <textarea placeholder="Type a message ..." name="msg" required></textarea>
+                                    
+                                                        <button type="submit" class="btn">Send</button>
+                                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                                    </form>
+                                                </div>
+                                                </aside>
+                        Javascript
+                                                <script>
+                                                    function openForm() {
+                                                      document.getElementById("myForm").style.display = "block";
+                                                    }
+                                                    
+                                                    function closeForm() {
+                                                      document.getElementById("myForm").style.display = "none";
+                                                    }
+                                                </script>
+                        END CHAT POPUP MESSAGE-->
         </footer>
     </body>
 </html>
