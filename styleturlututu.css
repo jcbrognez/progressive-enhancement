@@ -40,16 +40,12 @@ h1:not(header) {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#clients {
-    background-color: rgb(238, 238, 238);
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
+
 /*links*/
 a {
     text-decoration: none;
 }
-/*HEADER*/
+/*1.HEADER & NAV*/
 header {
     background-color: rgb(51, 51, 51);
     height: 50px;
@@ -93,7 +89,7 @@ header nav li:first-of-type {
 }
 /*FIN HEADER*/
 
-/*BANNIERE*/
+/*2.BANNIERE*/
 #banniere {
     background-color: rgb(30,147,204);
     padding-top: 30px;
@@ -132,14 +128,14 @@ header nav li:first-of-type {
     left: 210px;
     top: 0px;
 }
-/*AWESOME PROJECTS*/
+/*3.AWESOME PROJECTS*/
 #awesome {
     background-color: rgb(30,147,204);
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
 }
-#awesome aside a {
+#awesome aside a {/*image chat link to footer*/
     position: absolute;
     right: 20px;
     bottom: 80px;
@@ -160,7 +156,12 @@ header nav li:first-of-type {
 #awesome article p {
     text-align: justify;
 }
-/*CLIENTS*/
+/*4.CLIENTS LOGOS*/
+#clients {
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 #clients p {
     text-align: center;
 }
@@ -170,7 +171,7 @@ header nav li:first-of-type {
 #clients p:last-of-type {
     margin-top: 50px;
 }
-/*STARTING*/
+/*5.GET STARTED*/
 /*ESSAIE n°2*/
 #starting {
     margin-top: 70px;
@@ -203,7 +204,7 @@ header nav li:first-of-type {
     text-align: center;
 }
 
-/*FOOTER*/
+/*6.FOOTER*/
 footer {
     background-color: rgb(51, 51, 51);
     height: 50px;
@@ -213,11 +214,13 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
 }
+/*image chat without popup chat
 footer aside {
     position: absolute;
     right: 20px;
     bottom: 10px;
 }
+*/
 #ancrebas nav {
     margin-left: 5%;
 }
@@ -237,75 +240,79 @@ footer cite {
 }
 
 
+/*CHAT POPUP
+(button submit manquant)*/
 
-/*CHAT POPUP FOIRRAGE
-
-#awesome button {
+#ancrebas button { /*image open chat*/
     position: absolute;
-    width: 20px;
-    right: 20px;
-    bottom: 80px;
+    right: 15px;
+    bottom: 10px;
 }
-/* Button used to open the chat form - fixed at the bottom of the page
+
+/* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
-}
-/* The popup chat - hidden by default
+    position: fixed;
+  }
+/* The popup chat - hidden by default */
 .chat-popup {
-    position: absolute;
-    right: 20px;
-    bottom: 150px;
     display: none;
-    z-index: 9;
-}
-/* Add styles to the form container
-.form-container {
-    max-height: 150px;
-    border-radius: 5px;
-    padding: 10px;
+    position: fixed;
+    bottom: 72px;
+    right: 20px;
+    border: 3px solid rgb(22, 88, 130);
+    border-radius: 10px;
     background-color: white;
-}
-/* Full-width textarea
-.form-container textarea {
-    width: 70%;
-    height: 20px;
-    padding: 20px;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    margin-right: 20px;
     border: none;
     background: #f1f1f1;
     resize: none;
-    min-height: 180px;
-}
+  }
   
-/* When the textarea gets focus, do something
-.form-container textarea:focus {
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
     background-color: #ddd;
     outline: none;
-}
+  }
 
-/* Set a style for the submit/send button
-.form-container .btn {
-    background-color: rgb(233, 144, 2);
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #4CAF50;
     color: white;
-    padding: 16px 20px;
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
+    width: 40%;
+    margin-bottom:0px;
     opacity: 0.8;
-}
+  }
   
-/* Add a background color to the cancel button
-.form-container .cancel {
-    background-color: rgb(51, 51, 51);
-}
-
-/* Add some hover effects to buttons
-.form-container .btn:hover, .open-button:hover {
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
     opacity: 1;
-}
+  }
 
 /*end chat popup*/
 
