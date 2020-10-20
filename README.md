@@ -1,18 +1,17 @@
 # progressive-enhancement
 
-## Parcours sprint en htlm &amp; css
+## Sprint in htlm &amp; css
 
-Cette page est réalisée dans le cadre de mon apprentissage. Elle sera développée (ou pas) selon mon parcours d'apprenti.
+Page realized at the beginning of my learning at Becode.
 
-Le but de l'exercice est de reproduire le plus fidèlement possible une maquette (représentation d'une page web désirée) en une page html + css. Il s'agit avant tout de reproduire l'esthétique et la mise en forme.
-
+The purpose is to reproduce the most closely posible a mockup page (aesthetic & layout) with html & css.
 
 #### Etapes principales :
 
-1) Ecriture de la structure en html
-2) Mise en forme du contenu avec css (positionnement et flexbox)
-3) Ajout de links
-4) Premier essai de création d'un popup chat message (bouton d'envoie n'apparaît pas)
+1) HTML structure
+2) Layout of content with CSS (positioning and flexbox)
+3) Adding links
+4) First try of building a popup chat message (not functional)
 
 
 Junior Web : *Jean-Charles Brognez*
