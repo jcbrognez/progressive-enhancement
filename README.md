@@ -1,4 +1,6 @@
-# progressive-enhancement
+# Turlututu Mockup reproduction
+
+![Mockup Page](./turlututu_page.jpg)
 
 ## Sprint in htlm &amp; css
 
@@ -6,7 +8,7 @@ Page realized at the beginning of my learning at Becode.
 
 The purpose is to reproduce the most closely posible a mockup page (aesthetic & layout) with html & css.
 
-#### Etapes principales :
+#### Steps :
 
 1) HTML structure
 2) Layout of content with CSS (positioning and flexbox)
